@@ -6,7 +6,9 @@ export class DataStore {
             Blogs.StartuPiko,
             Blogs.Hashavua,
             Blogs.Hasolidit,
-            Blogs.ChayotKis
+            Blogs.ChayotKis,
+            Blogs.Mamony,
+            Blogs.Startuping
         ];
     }
 }
