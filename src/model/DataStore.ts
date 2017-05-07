@@ -4,7 +4,9 @@ export class DataStore {
     public static getBlogs() : Blog[] {
         return [
             Blogs.StartuPiko,
-            Blogs.Hashavua
+            Blogs.Hashavua,
+            Blogs.Hasolidit,
+            Blogs.ChayotKis
         ];
     }
 }
