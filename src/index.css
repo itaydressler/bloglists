@@ -1,5 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+* {
+  font-family:'opensanshebrew-regular';
+}
+
+@font-face {
+  font-family: 'opensanshebrew-regular';
+  src: local('opensanshebrew-regular'), url(./fonts/opensanshebrew-regular.woff) format('woff');
 }

@@ -8,7 +8,7 @@ const logo = require('./logo.svg');
 class App extends React.Component<{}, null> {
 
     private renderBlogs() {
-        return DataStore.getBlogs().map(blog => <BlogComponent blog={blog}/>);
+        return DataStore.getBlogs().map(blog => <BlogComponent blog={blog} key={blog.name}/>);
     }
 
     render() {
