@@ -1,29 +1,14 @@
 import * as React from 'react';
 import './App.css';
 import {DataStore} from "./model/DataStore";
+import {BlogComponent} from "./components/Blog/BlogComponent";
 
 const logo = require('./logo.svg');
 
 class App extends React.Component<{}, null> {
 
     private renderBlogs() {
-        return DataStore.getBlogs().map(blog => {
-            return (
-                <div>
-                    <div>{blog.name}</div>
-                    <div>{blog.blogSummary}</div>
-                    {
-                        blog.posts.map(post => {
-                            return (
-                                <div>
-                                    <a href={post.url}>{post.title}</a>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            )
-        });
+        return DataStore.getBlogs().map(blog => <BlogComponent blog={blog}/>);
     }
 
     render() {

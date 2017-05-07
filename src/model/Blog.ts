@@ -9,7 +9,7 @@ export class Blog {
     public name:string;
     public mediaUrl:string;
     public siteUrl:string;
-    public blogSummary:string;
+    public summary:string;
     public type:BlogType;
     public readers?:number;
     public posts:Post[];
@@ -21,7 +21,7 @@ export class Blogs {
         name:'סטארטאפיקו',
         mediaUrl:'',
         type:BlogType.Text,
-        blogSummary:'בלוג זה יתמקד בתרבות של חברות סטארטאפ ובעיקר כאלה בישראל. גיוס עובדים, ניהול צוותים, פרודקטיביות, יצירת DNA, גיוסי כספים, עבודה עם הצד השני של האוקיינוס ועוד. אני גם אשתף פה בתהליך הקמת הסטארטאפ החדש שלי וכל מה שמעניין בבניית חברה מאפס. הבלוג מיועד ליזמים, עובדים בחברות סטארטאפ וכל מי שחושב לעבוד באחת.',
+        summary:'בלוג זה יתמקד בתרבות של חברות סטארטאפ ובעיקר כאלה בישראל. גיוס עובדים, ניהול צוותים, פרודקטיביות, יצירת DNA, גיוסי כספים, עבודה עם הצד השני של האוקיינוס ועוד. אני גם אשתף פה בתהליך הקמת הסטארטאפ החדש שלי וכל מה שמעניין בבניית חברה מאפס. הבלוג מיועד ליזמים, עובדים בחברות סטארטאפ וכל מי שחושב לעבוד באחת.',
         posts: [
             {
                 title:'פוקוס. איך לדעת מה הדבר הנכון לעבוד עליו עכשיו.',
@@ -60,7 +60,7 @@ export class Blogs {
         siteUrl:'http://www.shavua.net/',
         name:'השבוע',
         mediaUrl:'https://media.simplecast.com/podcast/logo_image/173/Website_20Header_202.png',
-        blogSummary:'פודקאסאט שבועי על סטארטאפים בעברית. מאת דוד כץ ואיתן לויט.',
+        summary:'פודקאסאט שבועי על סטארטאפים בעברית. מאת דוד כץ ואיתן לויט.',
         type:BlogType.Podcast,
         posts: [
             {
@@ -98,7 +98,7 @@ export class Blogs {
         siteUrl:'https://www.hasolidit.com/',
         name:'הסולידית',
         mediaUrl:'http://www.hasolidit.com/wp-content/uploads/2014/04/SOLIDSMALL10.jpg',
-        blogSummary:`הבלוג הזה עוסק בחופש. האתר מתיימר להציג מסגרת רעיונית ופרקטית שתאפשר לקוראיו לקחת אחריות אישית ולהגיע לעצמאות כלכלית בכוחות עצמם. בעולם חומרי וחומרני, חופש כלכלי הוא תמציתה של החירות.
+        summary:`הבלוג הזה עוסק בחופש. האתר מתיימר להציג מסגרת רעיונית ופרקטית שתאפשר לקוראיו לקחת אחריות אישית ולהגיע לעצמאות כלכלית בכוחות עצמם. בעולם חומרי וחומרני, חופש כלכלי הוא תמציתה של החירות.
     מה תעשו בחופש הזה? לא באמת משנה לי.`,
         type:BlogType.Text,
         posts: [
@@ -141,7 +141,7 @@ export class Blogs {
         siteUrl:'http://www.kan.org.il/Podcast/program.aspx/?progId=7',
         name:'חיות כיס',
         mediaUrl:'http://www.kan.org.il/download/pictures/podcastProgram7_img_share.jpg',
-        blogSummary:`ישיבת המערכת עם שאול אמסטרדמסקי, צליל אברהם ואנשי הדסק הכלכלי של "כאן" - מהאותיות הקטנות ועד לכוחות הכי חזקים במשק`,
+        summary:`ישיבת המערכת עם שאול אמסטרדמסקי, צליל אברהם ואנשי הדסק הכלכלי של "כאן" - מהאותיות הקטנות ועד לכוחות הכי חזקים במשק`,
         type:BlogType.Podcast,
         posts: [
             {
@@ -176,7 +176,7 @@ export class Blogs {
         siteUrl:'http://www.mamony.com/',
         name:'ממוני - השכלה פיננסית',
         mediaUrl:'http://www.mamony.com/wp-content/uploads/2017/01/Mamony-logoo@2x.png',
-        blogSummary:`ממוני – השכלה פיננסית
+        summary:`ממוני – השכלה פיננסית
 
 חסכון פנסיוני? משכנתא מהבנק?הלוואות? השקעות? מניות? נשמע לי מוכר אבל בתכלס אני לא מבין בזה כלום!
 
@@ -271,7 +271,7 @@ export class Blogs {
         siteUrl:'http://www.startuping.co.il/',
         name:'Startuping',
         mediaUrl:'',
-        blogSummary:`אני יזם אינטרנט, יועץ, מלווה ומעורב בסטארטאפים קטנים וגדולים. שבגדול אוהב לבנות דברים שפותרים כאבים למיליוני יוזרים בעולם. אני אוהב לבנות מוצרים מצוינים עם אנשים מצוינים וכיפים.
+        summary:`אני יזם אינטרנט, יועץ, מלווה ומעורב בסטארטאפים קטנים וגדולים. שבגדול אוהב לבנות דברים שפותרים כאבים למיליוני יוזרים בעולם. אני אוהב לבנות מוצרים מצוינים עם אנשים מצוינים וכיפים.
 
 קראתי לבלוג Startuping כי אני מאמין שהקמת סטארטאפ זה תהליך מתמשך Present progressive, ואני נמצא עכשיו ממש בתהליך של לבנות את הדבר הבא.
 
