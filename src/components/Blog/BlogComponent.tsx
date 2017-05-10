@@ -16,7 +16,7 @@ export class BlogComponent extends React.Component<Props, null> {
     public render() {
         const { blog } = this.props;
         return (
-            <Card shadow={0} style={{width: '512px', marginBottom:'20px', marginLeft:'50px', cursor:'pointer'}} onClick={this.onClick}>
+            <Card className="blog-container" shadow={0} onClick={this.onClick}>
                 <CardTitle className="blog-title" style={{color: '#fff', height: '176px', background: `url(${blog.mediaUrl}) center / cover`}}>
                     {blog.name}
                     </CardTitle>

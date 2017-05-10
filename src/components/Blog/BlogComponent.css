@@ -1,4 +1,19 @@
+
+.blog-container {
+	margin-bottom: 20px !important;
+	margin-left: 50px !important;
+	width: 512px !important;
+	cursor: pointer;
+}
+
 .blog-title {
 	text-shadow: 0 0 5px rgba(0,0,0,0.3);
 	overflow: visible;
+}
+
+@media only screen and (max-width: 700px) {
+	.blog-container {
+		margin-left: 0 !important;
+		width: 95% !important;
+	}
 }
