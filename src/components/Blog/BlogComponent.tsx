@@ -2,6 +2,7 @@ import * as React from 'react';
 import './BlogComponent.css';
 import {Blog} from "../../model/Blog";
 import { Card, CardText, CardTitle } from 'react-mdl';
+import {BlogPostComponent} from "./BlogPost/BlogPostComponent";
 
 interface Props {
     blog:Blog;
@@ -15,11 +16,14 @@ export class BlogComponent extends React.Component<Props, null> {
     public render() {
         const { blog } = this.props;
         return (
-            <Card shadow={0} style={{width: '512px', margin: 'auto', marginBottom:'20px', cursor:'pointer'}} onClick={this.onClick}>
-                <CardTitle style={{color: '#fff', height: '176px', background: `url(${blog.mediaUrl}) center / cover`}}>
+            <Card shadow={0} style={{width: '512px', marginBottom:'20px', marginLeft:'50px', cursor:'pointer'}} onClick={this.onClick}>
+                <CardTitle className="blog-title" style={{color: '#fff', height: '176px', background: `url(${blog.mediaUrl}) center / cover`}}>
                     {blog.name}
                     </CardTitle>
                 <CardText>{blog.summary}</CardText>
+                <div>
+                    { blog.posts.map(post => <BlogPostComponent post={post}/>)}
+                </div>
             </Card>
         )
     }

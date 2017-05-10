@@ -21,8 +21,9 @@ class App extends React.Component<{}, null> {
                 <p className="App-intro">
                     We got started!
                 </p>
-
-                { this.renderBlogs() }
+                <div className="blogs-container">
+                    { this.renderBlogs() }
+                </div>
             </div>
         );
     }

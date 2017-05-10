@@ -3,11 +3,22 @@ body {
   padding: 0;
 }
 
-* {
+*, .mdl-card__title-text {
   font-family:'opensanshebrew-regular';
+  text-align: right;
+  direction: rtl;
 }
 
 @font-face {
   font-family: 'opensanshebrew-regular';
   src: local('opensanshebrew-regular'), url(./fonts/opensanshebrew-regular.woff) format('woff');
+}
+
+.depth {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.depth:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
